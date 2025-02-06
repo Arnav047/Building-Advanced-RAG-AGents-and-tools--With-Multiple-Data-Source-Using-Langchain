@@ -33,3 +33,47 @@ There are general prompting based implementations that do not require any model-
 
 Please see the LangGraph documentation for more information, or this how-to guide for specific information on migrating to LangGraph.
 
+
+## What is an Agent in LLM or LangChain?
+An Agent in LLM or LangChain is an AI system that dynamically decides which tool or action to use based on the given input. Unlike a basic chatbot, an agent thinks, plans, and interacts with external tools to achieve a task.
+
+💡 Think of an agent as an AI "decision-maker" that picks the right tools to get things done.
+
+How Agents Work?
+🔹 User provides a query → (e.g., "What’s the weather in Mumbai?")
+🔹 Agent analyzes the query
+🔹 Agent selects the right tool (e.g., Weather API)
+🔹 Agent calls the tool, retrieves results, and responds
+🔹 If needed, the agent can plan multiple steps to get the best answer!
+
+
+
+
+## What is a Tool in LLM or LangChain?
+A tool in LLM or LangChain refers to an external function or API that an AI model (like GPT-4) can call to perform specific tasks beyond text generation.
+
+💡 Think of a tool as a "superpower" that expands the capabilities of an LLM.
+
+## How Tools Work in LLMs (e.g., OpenAI GPT-4 Turbo)?
+LLMs are good at reasoning but lack real-time information access.
+Tools help by:
+✅ Fetching real-time data (weather, stock prices, latest news)
+✅ Performing calculations (math, Python execution)
+✅ Interacting with external APIs (search engines, databases, company APIs)
+
+Example: OpenAI Tools
+OpenAI's GPT-4 Turbo supports tools like:
+
+Code Interpreter (Python execution) – for complex calculations and data analysis
+Browser/Search – for retrieving real-time web information
+Custom APIs – for interacting with external services (e.g., database queries, automation)
+Tools in LangChain
+LangChain provides a Tools API to integrate different functionalities into LLM applications.
+
+🔹Types of Tools in LangChain
+Tool Type	Purpose
+Google Search	Fetch real-time data from the web
+Python REPL	Execute Python code dynamically
+SQL Database	Query structured data from a database
+File Search	Retrieve text from documents
+APIs (Zapier, OpenAI, etc.)	Connect to third-party services
