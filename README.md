@@ -6,4 +6,4 @@ Project Summary
 
 
 
-So here if the answer to query is not present in pdf, then through various tools we will retrieve info from wiki and arxiv
+So here if the answer to query is not present in pdf, then through various TOOLS we will retrieve info from wiki and arxiv
